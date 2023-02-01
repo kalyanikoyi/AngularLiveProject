@@ -1,0 +1,66 @@
+components:-
+
+1.Generate header component.
+2.Create header(logo,Login,cart).
+3.place header selector in app-component.
+4.Generete home component
+5.give path to home compo in app-routing.(path:'/',component:Homecomponent).
+6.create food model.
+7.create foodservice.Import food model.Enter all image details.
+8.Import foodservice in home.ts
+9.Fetch all the related data from foodservice & decorate home page.
+
+Now coming to the logic:-
+
+when we enter name of the food in url, we have to get that particular image.
+for that follow the steps:-
+
+1.generate search component.
+2.Give path in route.ts(path:'serach/:searchItem',comp:Homecomponent).
+3.import activatedRoute & give instance.
+4.through the instance we have to fetch the params & write the code reated to it.
+5.In search.ts import activatedRoute.
+
+When we click on image we should get the details of image in another page.
+for that:-
+
+1.generate food component.
+2.give path in app-routing(path:'food/:id',comp:foodcompo)
+3.create method in service.
+4.import service in food.ts & give instance to it.
+5.import activateroute & fetch params in food.ts.
+6.work in food.html as we required.
+ 
+when we click on tags we should get the items related to that tags.
+for that:-
+
+1.generate tags component.
+2.give path in app-route(path:'tag/:tag',comp:homecomp).
+3.create tags model.
+4.create method in service & import tags model. 
+5.import activatedroute in home.ts.
+6.give condition in app.ts
+
+Now its time to add items to cart:-
+for that:-
+
+1.create cartItems model.
+2.create cart model.
+3.create cartService with sub member
+  1.
+
+
+5.Tags
+6.Cart
+7.Not-found
+
+Services:-
+
+1.Food
+2.Cart
+
+Shared -> Models:-
+1.Food.ts
+2.Cart.ts
+3.CartItems.ts
+4.Tags
